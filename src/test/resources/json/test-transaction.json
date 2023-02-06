@@ -1,0 +1,9 @@
+{
+    "value": 200,
+    "type": "INCOME",
+    "category": {
+        "id": 1
+    },
+    "description": "Compras",
+    "date": "2022-12-16"
+}

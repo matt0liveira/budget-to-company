@@ -1,0 +1,79 @@
+{
+  "properties": [
+    {
+      "name": "budget.storage.type",
+      "type": "java.lang.String",
+      "description": "A description for 'budget.storage.type'"
+    },
+    {
+      "name": "budget.storage.local.directory-photos",
+      "type": "java.lang.String",
+      "description": "A description for 'budget.storare.local.directory-photos'"
+    },
+    {
+      "name": "budget.storage.s3.access.key.id",
+      "type": "java.lang.String",
+      "description": "A description for 'budget.storage.s3.access.key.id'"
+    },
+    {
+      "name": "budget.storage.s3.access.key.secret",
+      "type": "java.lang.String",
+      "description": "A description for 'budget.storage.s3.access.key.secret'"
+    },
+    {
+      "name": "budget.storage.s3.bucket",
+      "type": "java.lang.String",
+      "description": "A description for 'budget.storage.s3.bucket'"
+    },
+    {
+      "name": "budget.storage.s3.region",
+      "type": "java.lang.String",
+      "description": "A description for 'budget.storage.s3.region'"
+    },
+    {
+      "name": "budget.storage.s3.directory-photos",
+      "type": "java.lang.String",
+      "description": "A description for 'budget.storage.s3.directory-photos'"
+    },
+    {
+      "name": "budget.storage.s3.access-key-id",
+      "type": "java.lang.String",
+      "description": "A description for 'budget.storage.s3.access-key-id'"
+    },
+    {
+      "name": "budget.storage.s3.access-key-secret",
+      "type": "java.lang.String",
+      "description": "A description for 'budget.storage.s3.access-key-secret'"
+    },
+    {
+      "name": "budget.jwt.keystore.jks-location",
+      "type": "java.lang.String",
+      "description": "A description for 'budget.jwt.keystore.jks-location'"
+    },
+    {
+      "name": "budget.jwt.keystore.alias",
+      "type": "java.lang.String",
+      "description": "A description for 'budget.jwt.keystore.alias'"
+    },
+    {
+      "name": "budget.jwt.keystore.password",
+      "type": "java.lang.String",
+      "description": "A description for 'budget.jwt.keystore.password'"
+    },
+    {
+      "name": "budget.auth.provider-url",
+      "type": "java.lang.String",
+      "description": "A description for 'budget.auth.provider-url'"
+    },
+    {
+      "name": "springdoc.oAuthFlow.authorizationUrl",
+      "type": "java.lang.String",
+      "description": "A description for 'springdoc.oAuthFlow.authorizationUrl'"
+    },
+    {
+      "name": "springdoc.oAuthFlow.tokenUrl",
+      "type": "java.lang.String",
+      "description": "A description for 'springdoc.oAuthFlow.tokenUrl'"
+    }
+  ]
+}

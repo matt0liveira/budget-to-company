@@ -1,0 +1,36 @@
+version: '3.9'
+
+networks:
+  budget-network:
+    driver: bridge
+
+services:
+  budget-mysql:
+    image: mysql:8.0
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_ROOT_PASSWORD: 'root'
+    ports:
+      - '3306:3306'
+    networks:
+      - budget-network
+
+  budget-api:
+    image: budget-api
+    command: ["/wait-for-it.sh", "budget-mysql:3306", "-t", "30", "--", "java", "-jar", "api.jar"]
+    environment:
+      DB_HOST: budget-mysql
+    networks:
+      - budget-network
+    depends_on:
+      - budget-mysql
+
+  budget-proxy:
+    build: ./nginx
+    image: budget-proxy
+    ports:
+      - "80:80"
+    networks:
+      - budget-network
+    depends_on:
+      - budget-api
